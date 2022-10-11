@@ -47,7 +47,7 @@ const Draft: React.FC = () => {
                         type="Submit" 
                         value="Create" 
                     />
-                    <a className="back" href="#" onClick={() => Router.push('/')}>or Cancel</a>
+                    <a className="ml-4" href="#" onClick={() => Router.push('/')}>or Cancel</a>
                 </form>
             </div>
             <style jsx>
@@ -72,10 +72,6 @@ const Draft: React.FC = () => {
                         background: #ececec;
                         border: 0;
                         padding: 1rem 2rem;
-                    }
-
-                    .back {
-                        margin-left: 1rem;
                     }
                 `}
             </style>

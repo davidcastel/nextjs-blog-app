@@ -53,7 +53,7 @@ const Drafts: React.FC<Props> = (props) => {
                 <h1>My Drafts</h1>
                 <main>
                     {props.drafts.map((post) => (
-                        <div key={post.id} className="post">
+                        <div key={post.id} className="post transition-shadow ease-in hover:shadow-[1px_1px_3px_#aaa]">
                             <Post post={post} />
                         </div>
                     ))}
@@ -61,15 +61,6 @@ const Drafts: React.FC<Props> = (props) => {
             </div>
             <style jsx>
                 {`
-                    .post {
-                        background: var(--geist-background);
-                        transition: box-shadow 0.1s ease-in;
-                    }
-
-                    .post:hover {
-                        box-shadow: 1px 1px 3px #aaa;
-                    }
-
                     .post + .post {
                         margin-top: 2rem;
                     }
