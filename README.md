@@ -10,3 +10,4 @@ I was curious on using the Postgres Database and wanted to learn how to use it w
 - Postgres
 - Prisma
 - TypeScript
+- TailwindCSS
